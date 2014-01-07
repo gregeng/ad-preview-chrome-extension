@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Ad Placement Preview</title>
+    <style>
+      body {
+        min-width: 250px;
+        overflow-x: hidden;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+  </head>
+  <body>
+
+          Instructions:<br>
+          <ol>
+          <li>Enter link to image for ad.</li>
+          <li>Enter Ad title text.</li>
+          <li>Enter Ad copy text.</li>
+          <li>Enter Ad url.</li>
+          <li>Click the button.</li>
+          </ol>
+
+
+          <form accept-charset="UTF-8" action="/entertainment" method="get" style="text-align:center"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+           <label for="ad_image">Ad Image:</label><br>
+           <input id="ad_image" name="ad_image" type="text" /><br>
+           <label for="ad_title">Ad Title:</label><br>
+           <input id="ad_title" name="ad_title" type="text" /><br>
+           <label for="ad_text">Ad Copy:</label><br>
+           <input id="ad_text" name="ad_text" type="text" /><br>
+           <label for="ad_url">Ad URL:</label><br>
+           <input id="ad_url" name="ad_url" type="text" /><br>
+           <input name="commit" type="submit" value="Generate" />
+          </form>
+
+  </body>
+</html>
+
