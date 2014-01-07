@@ -9,14 +9,21 @@
     "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
+    "web_accessible_resources": [
+      "jquery-2.0.3.min.js"
+    ],
   "permissions": [
     "https://secure.flickr.com/"
   ],
   "content_scripts": [
     {
       "matches": ["http://www.huffingtonpost.com/*","https://www.huffingtonpost.com/*"],
-      "js": ["jquery-2.0.3.min.js","myscript.js"],
+      "js": ["jquery-2.0.3.min.js", "myscript.js"],
       "run_at": "document_end"
     }
   ]
 }
+
+
+// google chrome extension submit form trigger javascript
+// pass form parameters and inject them as variables in the new iframe
