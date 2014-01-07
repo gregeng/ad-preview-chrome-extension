@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
-  $("#logo").hide(1000);
+  $("div[id^='containerinnerdiv_']").hide(3000);
+  $("#logo").hide(3000);
 
 });
